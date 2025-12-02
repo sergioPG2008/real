@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+
+    <style>
+        .img-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;   /* Centra las imágenes */
+            gap: 20px;             /* Espacio entre imágenes */
+            padding: 20px;
+        }
+
+        .img-container img {
+            max-width: 100%;       /* Hace las imágenes responsivas */
+            height: auto;          /* Mantiene proporciones */
+            width: 650px;          /* Tamaño máximo deseado */
+        }
+    </style>
+</head>
+
+<body>
+
+    {% include 'navbar.html' %}
+
+    <div class="img-container">
+        <img src="{% static 'assistance/Man1.png' %}">
+        <img src="{% static 'assistance/Man2.png' %}">
+        <img src="{% static 'assistance/Man3.png' %}">
+        <img src="{% static 'assistance/Man4.png' %}">
+        <img src="{% static 'assistance/Man5.png' %}">
+        <img src="{% static 'assistance/Man6.png' %}">
+    </div>
+
+</body>
+</html>

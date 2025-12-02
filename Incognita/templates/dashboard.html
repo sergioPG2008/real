@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Tutorial</title>
+<style>
+    /* Estilos para centrar el video y agregar padding arriba */
+    .video-container {
+        display: flex;          /* Para centrar horizontalmente */
+        justify-content: center;
+        padding-top: 50px;      /* Espacio arriba del video */
+    }
+</style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+    {% load static %}
+
+    <div class="video-container">
+        <video width="640" controls>
+            <source src="{% static 'assistance/VideoBueno.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+
+</body>
+</html>

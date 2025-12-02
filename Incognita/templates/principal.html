@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  {% load static %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Infografia</title>
+  <style>
+    .main-login-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 80px);
+        margin-top: 350px; /* espacio para el navbar */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+  </style>
+</head>
+<body>
+  {% include 'navbar.html' %}
+  <div class="main-login-wrapper">
+    <img src="{% static 'assistance/Cosa.jpg' %}" alt="Sergio">
+  </div>
+</body>
+</html>
